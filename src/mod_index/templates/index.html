@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1><strong style="color: black;">Página inicial</strong></h1>
+    <p class="important" style="color: black;">Você está logado como: <strong>{{ session['login']['grupo'] }}</strong> <br>
+        Seja bem vindo <strong>{{ session['login']['nome'] }}!</strong></p>
+{% endblock %}
